@@ -2,3 +2,8 @@
   display: flex;
   justify-content: center;
 }
+
+@mixin font($fontWeight: 300){
+  font-family: "Roboto", sans-serif;
+  font-weight: $fontWeight;
+}

@@ -1,12 +1,14 @@
 body{
-  margin: 0;
   @include font;
 }
 
 h1{
-  margin: 0;
   padding: 1rem;
-  @include font(500)
+  @include font(800);
+}
+
+.margin0{
+  margin: 0;
 }
 
 
@@ -28,9 +30,10 @@ h1{
   @include alignementCentral;
   padding: 1rem;
   background-color: #eaeaea;
-  .fas{
-    margin-right: 1rem;
-  }
+}
+
+.fas{
+  margin-right: 1rem;
 }
 
 .background{
@@ -42,13 +45,38 @@ h1{
   @include font(500);
   background-color: $couleurPrimaire;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem; //padding: haut droite bas gauche
   color: white;
   border: none;
-  box-shadow: 0px 2px 8px -1px black;
+  @include boxShadow;
   &:active{
     box-shadow: 0px 0px 0px 3px $couleurSecondaire;
   }
+}
+
+#fonctionnement{
+  @include font(500);
+}
+
+.divFonctionnement{
+  @include alignementCentral;
+  align-items: center;
+  background-color: $couleurBackground;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  @include boxShadow;
+}
+
+.numeroFonctionnement{
+  @include alignementCentral;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: $couleurPrimaire;
+  color: white;
+  border-radius: 10rem;
+  left: -22%;
 }
 
 

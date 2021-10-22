@@ -3,6 +3,7 @@
 header {
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
 }
 header img {
@@ -10,21 +11,24 @@ header img {
 }
 
 body {
-  margin: 0;
   font-family: "Roboto", sans-serif;
   font-weight: 300;
 }
 
 h1 {
-  margin: 0;
   padding: 1rem;
   font-family: "Roboto", sans-serif;
-  font-weight: 500;
+  font-weight: 800;
+}
+
+.margin0 {
+  margin: 0;
 }
 
 .alignementCentral {
   display: flex;
   justify-content: center;
+  align-items: center;
 }
 
 .textCenter {
@@ -41,10 +45,12 @@ h1 {
   border-top: #d2d2d2 3px solid;
   display: flex;
   justify-content: center;
+  align-items: center;
   padding: 1rem;
   background-color: #eaeaea;
 }
-.localisation .fas {
+
+.fas {
   margin-right: 1rem;
 }
 
@@ -58,13 +64,43 @@ h1 {
   font-weight: 500;
   background-color: #9356DC;
   border-radius: 2rem;
-  padding: 1rem;
+  padding: 1rem 2rem 1rem 2rem;
   color: white;
   border: none;
-  box-shadow: 0px 2px 8px -1px black;
+  box-shadow: 0px 4px 20px -10px black;
 }
 .btn:active {
   box-shadow: 0px 0px 0px 3px #FF79DA;
+}
+
+#fonctionnement {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+}
+
+.divFonctionnement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-items: center;
+  background-color: #f6f6f6;
+  padding: 2rem;
+  margin: 2rem;
+  border-radius: 2rem;
+  box-shadow: 0px 4px 20px -10px black;
+}
+
+.numeroFonctionnement {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 30px;
+  height: 30px;
+  position: relative;
+  background-color: #9356DC;
+  color: white;
+  border-radius: 10rem;
+  left: -22%;
 }
 
 /*# sourceMappingURL=style.css.map */

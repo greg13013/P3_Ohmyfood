@@ -60,11 +60,12 @@ h1{
 
 .divFonctionnement{
   @include alignementCentral;
-  align-items: center;
+  justify-content: normal;
   background-color: $couleurBackground;
   padding: 2rem;
   margin: 2rem;
   border-radius: 2rem;
+  position: relative;
   @include boxShadow;
 }
 
@@ -72,11 +73,11 @@ h1{
   @include alignementCentral;
   width: 30px;
   height: 30px;
-  position: relative;
+  position: absolute;
   background-color: $couleurPrimaire;
   color: white;
   border-radius: 10rem;
-  left: -22%;
+  left: -15px   ;
 }
 
 

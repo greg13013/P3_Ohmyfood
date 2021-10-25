@@ -25,6 +25,10 @@ h1 {
   margin: 0;
 }
 
+.padding0 {
+  padding: 0;
+}
+
 .alignementCentral {
   display: flex;
   justify-content: center;
@@ -37,6 +41,10 @@ h1 {
 
 .padding1REM {
   padding: 1rem;
+}
+
+.padding2REM {
+  padding: 2rem;
 }
 
 .localisation {
@@ -55,7 +63,6 @@ h1 {
 }
 
 .background {
-  padding: 2rem;
   background-color: #f6f6f6;
 }
 
@@ -102,6 +109,34 @@ h1 {
   color: white;
   border-radius: 10rem;
   left: -15px;
+}
+
+#restaurants {
+  padding-bottom: 1rem;
+}
+
+.card {
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1rem;
+}
+.card img {
+  width: 100%;
+  border-top-left-radius: 1rem;
+  border-top-right-radius: 1rem;
+}
+.card .nomRestaurant {
+  font-family: "Roboto", sans-serif;
+  font-weight: 700;
+}
+.card .cardText {
+  padding: 1rem;
+  line-height: 1.5rem;
+  display: flex;
+  justify-content: space-between;
+}
+.card p {
+  margin: 0;
 }
 
 /*# sourceMappingURL=style.css.map */

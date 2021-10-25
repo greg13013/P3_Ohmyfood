@@ -11,6 +11,9 @@ h1{
   margin: 0;
 }
 
+.padding0{
+  padding: 0;
+}
 
 .alignementCentral{
   @include alignementCentral;
@@ -23,6 +26,11 @@ h1{
 .padding1REM{
   padding: 1rem;
 }
+
+.padding2REM{
+  padding: 2rem;
+}
+
 
 .localisation{
   @include font(500);
@@ -37,7 +45,6 @@ h1{
 }
 
 .background{
-  padding: 2rem;
   background-color: $couleurBackground;
 }
 
@@ -78,6 +85,33 @@ h1{
   color: white;
   border-radius: 10rem;
   left: -15px   ;
+}
+
+#restaurants{
+  padding-bottom: 1rem;
+}
+
+.card{
+  background-color: white;
+  margin: 1rem;
+  border-radius: 1rem;
+  img{
+    width: 100%;
+    border-top-left-radius: 1rem;
+    border-top-right-radius: 1rem;
+  }
+  .nomRestaurant{
+    @include font(700)
+  }
+  .cardText{
+    padding: 1rem;
+    line-height: 1.5rem;
+    display: flex;
+    justify-content: space-between;
+  }
+  p{
+    margin: 0;
+  }
 }
 
 

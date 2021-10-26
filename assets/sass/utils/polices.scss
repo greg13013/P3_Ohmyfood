@@ -3,9 +3,15 @@
 
 
 .textGras{
-  @include font(700);
+  @include font(500);
+  font-size: 1.1rem;
 }
 
 .textMajuscule{
   text-transform: uppercase;
+}
+
+.textEllipsis{
+  overflow: hidden;
+  text-overflow: ellipsis;
 }

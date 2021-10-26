@@ -11,6 +11,10 @@ h1{
   margin: 0;
 }
 
+.margin1REM{
+  margin: 1rem;
+}
+
 .padding0{
   padding: 0;
 }
@@ -129,6 +133,7 @@ a{
 #pageRestaurant{
   .card{
     padding: 1rem;
+    white-space: nowrap;
   }
 }
 
@@ -140,11 +145,19 @@ a{
   h1{
     @include policeLogo;
     @include justifyBetween;
+    letter-spacing: 1px;
+    font-size: 1.7rem;
   }
   position: relative;
   top: -3rem;
   border-radius: 1rem;
   padding-bottom: 3rem;
+  padding-top: 1rem;
+}
+
+.textSouligne{
+  box-shadow: 0px 3px 0px 0px $couleurTertiaire;
+  width: 2.5rem;
 }
 .img{
   width: 100%;

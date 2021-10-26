@@ -88,17 +88,23 @@ h1{
 }
 
 #restaurants{
-  padding-bottom: 1rem;
+  padding-bottom: 2rem;
+  a{
+    color: black;
+  }
 }
 
 .card{
   background-color: white;
   margin: 1rem;
   border-radius: 1rem;
+  @include boxShadow;
   img{
     width: 100%;
     border-top-left-radius: 1rem;
     border-top-right-radius: 1rem;
+    height: 170px;
+    object-fit: cover;
   }
   .nomRestaurant{
     @include font(700)
@@ -106,12 +112,61 @@ h1{
   .cardText{
     padding: 1rem;
     line-height: 1.5rem;
-    display: flex;
-    justify-content: space-between;
+    @include justifyBetween;
   }
   p{
     margin: 0;
   }
+  .far{
+    font-size: 1.5rem;
+  }
+}
+
+a{
+  text-decoration: none;
+}
+
+#pageRestaurant{
+  .card{
+    padding: 1rem;
+  }
+}
+
+.justifyBetween{
+  @include justifyBetween;
+}
+
+.cardRestaurant{
+  h1{
+    @include policeLogo;
+    @include justifyBetween;
+  }
+  position: relative;
+  top: -3rem;
+  border-radius: 1rem;
+  padding-bottom: 3rem;
+}
+.img{
+  width: 100%;
+}
+
+footer{
+  background-color: $couleurFooter;
+  display: flex;
+  flex-direction: column;
+  a{
+    @include font;
+    margin-left: 1rem;
+    line-height: 1.5rem;
+    color: white;
+  }
+}
+
+.titreFooter{
+  @include policeLogo;
+  color: white;
+  font-size: 20px;
+  padding: 1rem;
 }
 
 

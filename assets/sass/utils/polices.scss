@@ -1,2 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Shrikhand&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap');
+
+
+.textGras{
+  @include font(700);
+}
+
+.textMajuscule{
+  text-transform: uppercase;
+}

@@ -4,9 +4,18 @@
   align-items: center;
 }
 
+@mixin justifyBetween{
+  display: flex;
+  justify-content: space-between;
+}
+
 @mixin font($fontWeight: 300){
   font-family: "Roboto", sans-serif;
   font-weight: $fontWeight;
+}
+
+@mixin policeLogo(){
+  font-family: "Shrikhand", sans-serif;
 }
 
 @mixin boxShadow(){

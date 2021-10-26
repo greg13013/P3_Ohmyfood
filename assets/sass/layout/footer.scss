@@ -1,0 +1,18 @@
+footer{
+  background-color: $couleurFooter;
+  display: flex;
+  flex-direction: column;
+  a{
+    @include font;
+    margin-left: 1rem;
+    line-height: 1.5rem;
+    color: white;
+  }
+}
+
+.titreFooter{
+  @include policeLogo;
+  color: white;
+  font-size: 20px;
+  padding: 1rem;
+}

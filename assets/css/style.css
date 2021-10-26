@@ -1,5 +1,5 @@
 @import url("https://fonts.googleapis.com/css2?family=Shrikhand&display=swap");
-@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;500;700;900&display=swap");
 .textGras {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
@@ -21,8 +21,16 @@ header {
   align-items: center;
   padding: 1rem;
 }
-header img {
-  width: 50%;
+header h1 {
+  font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
+  padding: 0;
+  margin: 0;
+  text-align: center;
+  width: 100%;
+}
+header .fas {
+  position: absolute;
 }
 
 body {
@@ -88,7 +96,8 @@ h1 {
 .btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
-  background-color: #9356DC;
+  font-size: 1rem;
+  background: linear-gradient(360deg, #b579ff, #FF79DA);
   border-radius: 2rem;
   padding: 1rem 2rem 1rem 2rem;
   color: white;
@@ -110,7 +119,7 @@ h1 {
   align-items: center;
   justify-content: normal;
   background-color: #f6f6f6;
-  padding: 2rem;
+  padding: 26px;
   margin: 2rem;
   border-radius: 2rem;
   position: relative;
@@ -169,11 +178,16 @@ h1 {
 
 a {
   text-decoration: none;
+  color: black;
 }
 
 #pageRestaurant .card {
-  padding: 1rem;
+  padding: 10px;
   white-space: nowrap;
+  line-height: 1.5rem;
+}
+#pageRestaurant .card span {
+  font-size: 14px;
 }
 
 .justifyBetween {
@@ -185,15 +199,18 @@ a {
   position: relative;
   top: -3rem;
   border-radius: 1rem;
-  padding-bottom: 3rem;
   padding-top: 1rem;
 }
 .cardRestaurant h1 {
   font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
   display: flex;
   justify-content: space-between;
-  letter-spacing: 1px;
   font-size: 1.7rem;
+}
+
+.blocMenu {
+  padding-bottom: 1rem;
 }
 
 .textSouligne {
@@ -220,6 +237,7 @@ footer a {
 
 .titreFooter {
   font-family: "Shrikhand", sans-serif;
+  font-weight: normal;
   color: white;
   font-size: 20px;
   padding: 1rem;

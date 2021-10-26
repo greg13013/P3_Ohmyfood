@@ -35,7 +35,6 @@ h1{
   padding: 2rem;
 }
 
-
 .localisation{
   @include font(500);
   border-top: #d2d2d2 3px solid;
@@ -54,7 +53,8 @@ h1{
 
 .btn{
   @include font(500);
-  background-color: $couleurPrimaire;
+  font-size: 1rem;
+  background: linear-gradient(360deg, #b579ff, #FF79DA);
   border-radius: 2rem;
   padding: 1rem 2rem 1rem 2rem; //padding: haut droite bas gauche
   color: white;
@@ -73,7 +73,7 @@ h1{
   @include alignementCentral;
   justify-content: normal;
   background-color: $couleurBackground;
-  padding: 2rem;
+  padding: 26px;
   margin: 2rem;
   border-radius: 2rem;
   position: relative;
@@ -128,12 +128,17 @@ h1{
 
 a{
   text-decoration: none;
+  color: black;
 }
 
 #pageRestaurant{
   .card{
-    padding: 1rem;
+    padding: 10px ;
     white-space: nowrap;
+    line-height: 1.5rem;
+    span{
+      font-size: 14px;
+    }
   }
 }
 
@@ -145,14 +150,16 @@ a{
   h1{
     @include policeLogo;
     @include justifyBetween;
-    letter-spacing: 1px;
     font-size: 1.7rem;
   }
   position: relative;
   top: -3rem;
   border-radius: 1rem;
-  padding-bottom: 3rem;
   padding-top: 1rem;
+}
+
+.blocMenu{
+  padding-bottom: 1rem;
 }
 
 .textSouligne{
@@ -163,23 +170,6 @@ a{
   width: 100%;
 }
 
-footer{
-  background-color: $couleurFooter;
-  display: flex;
-  flex-direction: column;
-  a{
-    @include font;
-    margin-left: 1rem;
-    line-height: 1.5rem;
-    color: white;
-  }
-}
 
-.titreFooter{
-  @include policeLogo;
-  color: white;
-  font-size: 20px;
-  padding: 1rem;
-}
 
 

@@ -10,5 +10,9 @@ header{
   }
   .fas{
     position: absolute;
+    @include responsive(tablette){
+      font-size: 2rem;
+      position: initial;
+    }
   }
 }

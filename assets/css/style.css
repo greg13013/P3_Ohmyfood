@@ -36,6 +36,12 @@ header h1 {
 header .fas {
   position: absolute;
 }
+@media (min-width: 768px) {
+  header .fas {
+    font-size: 2rem;
+    position: initial;
+  }
+}
 
 body {
   font-family: "Roboto", sans-serif;
@@ -243,6 +249,19 @@ a {
 #pageRestaurant .card span:first-child {
   width: 80%;
 }
+@media (min-width: 768px) {
+  #pageRestaurant .card {
+    width: auto;
+  }
+}
+
+@media (min-width: 768px) {
+  .groupMenu {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+}
 
 .justifyBetween {
   display: flex;
@@ -265,6 +284,11 @@ a {
 
 .blocMenu {
   padding-bottom: 1rem;
+}
+@media (min-width: 1265px) {
+  .blocMenu {
+    width: 33%;
+  }
 }
 
 .textSouligne {

@@ -182,7 +182,19 @@ a{
         width: 80%;
       }
     }
+    @include responsive(tablette){
+      width: auto;
+    }
   }
+}
+
+.groupMenu{
+  @include responsive(tablette){
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+  }
+
 }
 
 .justifyBetween{
@@ -203,6 +215,9 @@ a{
 
 .blocMenu{
   padding-bottom: 1rem;
+  @include responsive(ordinateur){
+    width: 33%;
+  }
 }
 
 .textSouligne{

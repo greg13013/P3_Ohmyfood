@@ -22,3 +22,13 @@
 @mixin boxShadow(){
   box-shadow: 0px 4px 20px -10px black;
 }
+
+@mixin responsive($size){
+  @if $size == tablette {
+    @media (min-width: 771px) and (max-width: 1099px) { @content; }
+  } @else if $size == ordinateur {
+    @media (min-width: 1100px) { @content; }
+  }
+}
+
+

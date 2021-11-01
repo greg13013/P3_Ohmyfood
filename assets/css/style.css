@@ -84,6 +84,12 @@ h1 {
   padding: 1rem;
   background-color: #eaeaea;
 }
+@media (min-width: 1265px) {
+  .localisation {
+    border-top-right-radius: 1rem;
+    border-top-left-radius: 1rem;
+  }
+}
 
 .fas {
   margin-right: 1rem;
@@ -96,6 +102,7 @@ h1 {
 .btn {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+  cursor: pointer;
   font-size: 1rem;
   background: linear-gradient(360deg, #b579ff, #FF79DA);
   border-radius: 2rem;
@@ -108,9 +115,22 @@ h1 {
   box-shadow: 0px 0px 0px 3px #FF79DA;
 }
 
+@media (min-width: 1265px) {
+  #reserverMenu > .background {
+    border-bottom-left-radius: 1rem;
+    border-bottom-right-radius: 1rem;
+  }
+}
+
 #fonctionnement {
   font-family: "Roboto", sans-serif;
   font-weight: 500;
+}
+@media (min-width: 1265px) {
+  #fonctionnement {
+    display: flex;
+    align-items: center;
+  }
 }
 
 .divFonctionnement {
@@ -124,6 +144,11 @@ h1 {
   border-radius: 2rem;
   position: relative;
   box-shadow: 0px 4px 20px -10px black;
+}
+@media (min-width: 1265px) {
+  .divFonctionnement {
+    width: 30%;
+  }
 }
 
 .numeroFonctionnement {
@@ -144,6 +169,13 @@ h1 {
 }
 #restaurants a {
   color: black;
+}
+@media (min-width: 1265px) {
+  #restaurants {
+    border-radius: 1rem;
+    padding-bottom: 1rem;
+    margin-bottom: 1rem;
+  }
 }
 
 .card {
@@ -174,6 +206,25 @@ h1 {
 }
 .card .far {
   font-size: 1.5rem;
+}
+@media (min-width: 768px) {
+  .card {
+    width: 40%;
+  }
+}
+@media (min-width: 1265px) {
+  .card {
+    width: 20%;
+  }
+}
+
+@media (min-width: 768px) {
+  .groupCard {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+  }
 }
 
 a {
@@ -227,6 +278,13 @@ a {
   object-fit: cover;
 }
 
+@media (min-width: 1265px) {
+  main {
+    margin-left: 10rem;
+    margin-right: 10rem;
+  }
+}
+
 footer {
   background-color: #353535;
   display: flex;
@@ -239,6 +297,15 @@ footer a {
   line-height: 1.5rem;
   color: white;
 }
+@media (min-width: 1265px) {
+  footer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.2rem;
+    flex-direction: row;
+  }
+}
 
 .titreFooter {
   font-family: "Shrikhand", sans-serif;
@@ -246,6 +313,11 @@ footer a {
   color: white;
   font-size: 20px;
   padding: 1rem;
+}
+@media (min-width: 1265px) {
+  .titreFooter {
+    font-size: 2.5rem;
+  }
 }
 
 /*# sourceMappingURL=style.css.map */

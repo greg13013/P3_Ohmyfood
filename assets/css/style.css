@@ -38,8 +38,7 @@
 }
 
 .like {
-  position: absolute;
-  left: -100vw;
+  display: none;
   transition: all 500ms;
 }
 .like:checked + label + .iconRempli {
@@ -49,10 +48,6 @@
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
 }
-.like:checked + label {
-  color: transparent;
-}
-
 .coeur {
   z-index: 10;
   cursor: pointer;

@@ -17,8 +17,7 @@
 }
 
 .like {
-  position: absolute;
-  left: -100vw;
+  display: none;
   transition: all 500ms;
 
   &:checked + label + .iconRempli {
@@ -30,7 +29,7 @@
   }
   &:checked + label{
 
-    color: transparent;
+    //color: transparent;
   }
 
 }

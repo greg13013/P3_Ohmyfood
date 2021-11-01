@@ -19,6 +19,41 @@
   text-overflow: ellipsis;
 }
 
+.fa-heart {
+  position: absolute;
+}
+
+.iconRempli {
+  z-index: 0;
+  transform: scale(0);
+  opacity: 0;
+  background: linear-gradient(#9356DC, #FF79DA);
+  -webkit-background-clip: text;
+  transition: all 250ms;
+}
+
+.far {
+  z-index: 10;
+}
+
+.like {
+  position: absolute;
+  left: -100vw;
+}
+.like:checked + label + .iconRempli {
+  transform: scale(1);
+  opacity: 1;
+  color: #e2264d;
+}
+.like:checked + label {
+  color: transparent;
+}
+
+.coeur {
+  z-index: 10;
+  cursor: pointer;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -184,6 +219,10 @@ h1 {
   }
 }
 
+.marginCoeur {
+  margin-right: 1rem;
+}
+
 .card {
   background-color: white;
   margin: 1rem;
@@ -210,7 +249,7 @@ h1 {
 .card p {
   margin: 0;
 }
-.card .far {
+.card .far, .card .fas {
   font-size: 1.5rem;
 }
 @media (min-width: 768px) {

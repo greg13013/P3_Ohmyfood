@@ -8,7 +8,8 @@
   opacity: 0;
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
-  transition: all 250ms;
+  -webkit-text-fill-color:transparent;
+  transition: all 500ms;
 }
 
 .far{
@@ -18,17 +19,23 @@
 .like {
   position: absolute;
   left: -100vw;
+  transition: all 500ms;
 
   &:checked + label + .iconRempli {
     transform: scale(1);
     opacity: 1;
-    color: #e2264d;
+    background: linear-gradient(#9356DC, #FF79DA);
+    -webkit-background-clip: text;
+    -webkit-text-fill-color:transparent;
   }
   &:checked + label{
-      color: transparent;
+
+    color: transparent;
   }
+
 }
 .coeur {
+
   z-index: 10;
   cursor: pointer;
 }

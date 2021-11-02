@@ -300,6 +300,11 @@ a {
     width: auto;
   }
 }
+@media (min-width: 1265px) {
+  #pageRestaurant {
+    border-radius: 1rem;
+  }
+}
 
 @media (min-width: 768px) {
   .groupMenu {
@@ -335,7 +340,7 @@ a {
 .blocMenu {
   padding-bottom: 1rem;
 }
-@media (min-width: 1265px) {
+@media (min-width: 768px) {
   .blocMenu {
     width: 33%;
   }
@@ -351,11 +356,19 @@ a {
   height: 270px;
   object-fit: cover;
 }
+@media (min-width: 1265px) {
+  .img {
+    border-radius: 1rem;
+  }
+}
 
 @media (min-width: 1265px) {
   main {
     margin-left: 10rem;
     margin-right: 10rem;
+    box-shadow: 0 0 10px 0px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
   }
 }
 

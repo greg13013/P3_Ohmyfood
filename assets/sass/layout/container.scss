@@ -198,6 +198,10 @@ a{
     @include responsive(tablette){
       width: auto;
     }
+
+  }
+  @include responsive(ordinateur){
+    border-radius: 1rem;
   }
 }
 
@@ -232,7 +236,7 @@ a{
 
 .blocMenu{
   padding-bottom: 1rem;
-  @include responsive(ordinateur){
+  @include responsive(tablette){
     width: 33%;
   }
 }
@@ -245,12 +249,18 @@ a{
   width: 100%;
   height: 270px;
   object-fit: cover;
+  @include responsive(ordinateur){
+    border-radius: 1rem;
+  }
 }
 
 main{
   @include responsive(ordinateur){
     margin-left: 10rem;
     margin-right: 10rem;
+    box-shadow: 0 0 10px 0px;
+    border-radius: 1rem;
+    margin-bottom: 1rem;
   }
 }
 

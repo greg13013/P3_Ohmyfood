@@ -30,7 +30,7 @@
   background: linear-gradient(#9356DC, #FF79DA);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
 }
 
 .far {
@@ -45,12 +45,11 @@
   opacity: 1;
 }
 .like:checked + .coeur {
-  transition: color 500ms ease-in-out;
   color: #9356DC;
 }
 
 .coeur {
-  transition: all 500ms ease-in-out;
+  transition: all 400ms ease-in-out;
   z-index: 10;
   cursor: pointer;
 }

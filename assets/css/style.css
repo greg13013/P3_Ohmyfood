@@ -309,6 +309,10 @@ a {
   }
 }
 
+.width100 {
+  width: 100%;
+}
+
 .justifyBetween {
   display: flex;
   justify-content: space-between;

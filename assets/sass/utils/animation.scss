@@ -1,3 +1,5 @@
+
+//ANIMATION COEUR
 .fa-heart {
   position: absolute;
 }
@@ -6,35 +8,39 @@
   z-index: 0;
   transform: scale(0);
   opacity: 0;
-  background: linear-gradient(#9356DC, #FF79DA);
+  background: $couleurCoeur;
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
-  transition: all 500ms;
+  transition: all 500ms ease-in-out;
 }
 
 .far{
   z-index: 10;
+
 }
 
 .like {
   display: none;
-  transition: all 500ms;
 
-  &:checked + label + .iconRempli {
+
+  &:checked + label + .iconRempli  {
+
     transform: scale(1);
     opacity: 1;
-    background: linear-gradient(#9356DC, #FF79DA);
-    -webkit-background-clip: text;
-    -webkit-text-fill-color:transparent;
+    //background: $couleurCoeur;
+    //-webkit-background-clip: text;
+    //-webkit-text-fill-color:transparent;
   }
-  &:checked + label{
-
-    //color: transparent;
+  &:checked + .coeur{
+    transition: color 500ms ease-in-out;
+    color: $couleurPrimaire;
+    //font-weight: bold;
+    //background: $couleurCoeur;
   }
 
 }
 .coeur {
-
+  transition: all 500ms ease-in-out;
   z-index: 10;
   cursor: pointer;
 }

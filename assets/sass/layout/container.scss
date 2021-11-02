@@ -122,7 +122,14 @@ h1{
 }
 
 .marginCoeur{
-  margin-right: 1rem;
+  margin-right: 2rem;
+}
+
+.fa-heart{
+  @include responsive(ordinateur){
+    font-size: 2rem;
+  }
+
 }
 
 .card{

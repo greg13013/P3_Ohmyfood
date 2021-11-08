@@ -460,6 +460,7 @@ a {
 
 #pageRestaurant .card {
   padding-left: 10px;
+  cursor: pointer;
   white-space: nowrap;
   line-height: 1.5rem;
 }

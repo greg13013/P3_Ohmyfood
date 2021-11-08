@@ -199,6 +199,12 @@ h1 {
     margin-left: 20rem;
   }
 }
+.divFonctionnement:hover {
+  background: #f5edff;
+}
+.divFonctionnement:hover .fas {
+  color: #9356DC;
+}
 
 @media (min-width: 1265px) {
   .listeFonctionnement {

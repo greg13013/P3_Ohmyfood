@@ -103,6 +103,12 @@ h1{
       margin-left: 20rem;
     }
   }
+  &:hover{
+    background: #f5edff;
+    .fas{
+      color: $couleurPrimaire;
+    }
+  }
 }
 
 .listeFonctionnement{

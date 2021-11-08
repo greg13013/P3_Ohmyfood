@@ -7,6 +7,9 @@ footer{
     margin-left: 1rem;
     line-height: 1.5rem;
     color: white;
+    @include responsive(ordinateur){
+      margin: 2rem;
+    }
   }
   @include responsive(ordinateur){
     @include alignementCentral;

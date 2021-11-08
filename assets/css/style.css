@@ -238,7 +238,7 @@ body {
   }
 }
 
-h1 {
+h2 {
   padding: 1rem;
   font-family: "Roboto", sans-serif;
   font-weight: 800;
@@ -515,7 +515,7 @@ a {
   border-radius: 1rem;
   padding-top: 1rem;
 }
-.cardRestaurant h1 {
+.cardRestaurant h2 {
   font-family: "Shrikhand", sans-serif;
   font-weight: normal;
   display: flex;

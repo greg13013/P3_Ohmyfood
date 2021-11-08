@@ -1,6 +1,8 @@
 body{
   @include font;
-  background: $couleurCoeur;
+  @include responsive(ordinateur){
+    background: $couleurCoeur;
+  }
 }
 
 h1{

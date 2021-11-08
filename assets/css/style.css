@@ -81,7 +81,11 @@ header .fas {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
-  background: linear-gradient(#9356DC, #FF79DA);
+}
+@media (min-width: 1265px) {
+  body {
+    background: linear-gradient(#9356DC, #FF79DA);
+  }
 }
 
 h1 {

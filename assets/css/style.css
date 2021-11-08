@@ -116,6 +116,7 @@
   }
 }
 .loader {
+  color: #99E2D0;
   width: 100%;
   height: 100%;
   position: fixed;
@@ -130,12 +131,12 @@
   z-index: 999;
   transform: scale(0);
   opacity: 0;
-  animation: loader 3s ease-in-out;
+  animation: loader 4s ease-in-out;
 }
 .loader span {
   margin: 0 -0.05em;
   transform-origin: 50% 50% -25px;
-  animation: loaderLettre 1.6s infinite;
+  animation: loaderLettre 1.5s infinite;
 }
 .loader span:nth-child(1) {
   animation-delay: 0.1s;
@@ -193,9 +194,14 @@
 @keyframes loaderLettre {
   0% {
     transform: rotateX(-360deg);
+    text-shadow: 0 5px 32px #99E2D0;
   }
   70% {
     transform: rotateX(0);
+    text-shadow: none;
+  }
+  100% {
+    text-shadow: 0 5px 32px #99E2D0;
   }
 }
 header {

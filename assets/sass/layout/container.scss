@@ -1,5 +1,6 @@
 body{
   @include font;
+  background: $couleurCoeur;
 }
 
 h1{
@@ -274,6 +275,7 @@ main{
     box-shadow: 0 0 10px 0px;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    background: white;
   }
 }
 

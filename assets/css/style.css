@@ -81,6 +81,7 @@ header .fas {
 body {
   font-family: "Roboto", sans-serif;
   font-weight: 300;
+  background: linear-gradient(#9356DC, #FF79DA);
 }
 
 h1 {
@@ -377,6 +378,7 @@ a {
     box-shadow: 0 0 10px 0px;
     border-radius: 1rem;
     margin-bottom: 1rem;
+    background: white;
   }
 }
 

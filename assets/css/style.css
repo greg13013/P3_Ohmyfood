@@ -171,7 +171,6 @@ h1 {
 @media (min-width: 1265px) {
   #fonctionnement {
     display: flex;
-    align-items: center;
   }
 }
 
@@ -187,9 +186,18 @@ h1 {
   position: relative;
   box-shadow: 0px 4px 20px -10px black;
 }
+@media (min-width: 768px) {
+  .divFonctionnement:nth-child(2) {
+    margin-left: 10rem;
+  }
+  .divFonctionnement:nth-child(3) {
+    margin-left: 20rem;
+  }
+}
+
 @media (min-width: 1265px) {
-  .divFonctionnement {
-    width: 30%;
+  .listeFonctionnement {
+    width: 80%;
   }
 }
 

@@ -394,6 +394,7 @@ h1 {
 }
 
 .card {
+  position: relative;
   background-color: white;
   margin: 1rem;
   border-radius: 1rem;
@@ -431,6 +432,16 @@ h1 {
   .card {
     width: 20%;
   }
+}
+
+.nouveauRestaurant {
+  position: absolute;
+  right: 15px;
+  top: 15px;
+  background: #99e2d0;
+  padding: 0.5rem;
+  color: #098c6c;
+  font-weight: bold;
 }
 
 @media (min-width: 768px) {

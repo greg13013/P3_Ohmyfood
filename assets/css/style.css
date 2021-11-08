@@ -54,6 +54,44 @@
   cursor: pointer;
 }
 
+.rightCard {
+  width: 0%;
+  overflow: hidden;
+  background-color: #99E2D0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-left: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+
+.leftCard {
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+
+.blocMenu .card {
+  display: flex;
+}
+.blocMenu .card:hover .rightCard {
+  transition: all 500ms ease-in-out;
+  width: 20%;
+}
+.blocMenu .card:hover .leftCard {
+  transition: all 500ms ease-in-out;
+  width: 80%;
+}
+.blocMenu .card:hover .fas {
+  transform: rotate(360deg);
+  transition: transform 500ms ease-in-out;
+}
+.blocMenu .card .fas {
+  margin-right: 0;
+}
+
 header {
   display: flex;
   justify-content: center;
@@ -304,9 +342,13 @@ a {
 }
 
 #pageRestaurant .card {
-  padding: 10px;
+  padding-left: 10px;
   white-space: nowrap;
   line-height: 1.5rem;
+}
+#pageRestaurant .card .leftCard {
+  padding-bottom: 10px;
+  padding-top: 10px;
 }
 #pageRestaurant .card span {
   font-size: 14px;
@@ -340,6 +382,7 @@ a {
 .justifyBetween {
   display: flex;
   justify-content: space-between;
+  width: 100%;
 }
 
 .cardRestaurant {

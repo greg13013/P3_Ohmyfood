@@ -46,3 +46,44 @@
 }
 
 
+//ANIMATION CARD RESTAURANT
+.rightCard{
+  width: 0%;
+  overflow: hidden;
+  background-color: $couleurTertiaire;
+  @include alignementCentral;
+  margin-left: 1rem;
+  border-top-right-radius: 1rem;
+  border-bottom-right-radius: 1rem;
+  color: white;
+  transition: all 500ms ease-in-out;
+}
+.leftCard{
+  width: 100%;
+  transition: all 500ms ease-in-out;
+}
+
+.blocMenu{
+  .card{
+    display: flex;
+    &:hover{
+      .rightCard{
+        transition: all 500ms ease-in-out;
+        width: 20%;
+
+      }
+      .leftCard{
+        transition: all 500ms ease-in-out;
+        width: 80%;
+      }
+      .fas {
+        transform: rotate(360deg);
+        transition: transform 500ms ease-in-out;
+      }
+    }
+    .fas {
+      margin-right: 0;
+    }
+  }
+}
+

@@ -45,6 +45,14 @@ h2{
   }
 }
 
+.inputLocalisation{
+  border: none;
+  background: transparent;
+  @include font(500);
+  width: 8rem;
+  font-size: 1rem;
+}
+
 .fas{
   margin-right: 1rem;
 }

@@ -299,6 +299,15 @@ h2 {
   }
 }
 
+.inputLocalisation {
+  border: none;
+  background: transparent;
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  width: 8rem;
+  font-size: 1rem;
+}
+
 .fas {
   margin-right: 1rem;
 }

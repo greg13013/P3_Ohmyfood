@@ -219,6 +219,12 @@ header h1 {
   text-align: center;
   width: 100%;
 }
+@media (min-width: 1265px) {
+  header h1 {
+    color: white;
+    font-size: 4rem;
+  }
+}
 header .fas {
   position: absolute;
 }
@@ -226,6 +232,11 @@ header .fas {
   header .fas {
     font-size: 2rem;
     position: initial;
+  }
+}
+@media (min-width: 1265px) {
+  header .fas {
+    color: white;
   }
 }
 

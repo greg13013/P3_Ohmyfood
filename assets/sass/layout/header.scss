@@ -8,7 +8,7 @@ header{
     text-align: center;
     width: 100%;
     @include responsive(ordinateur){
-      color: white;
+      text-shadow: 6px 4px 2px white;
       font-size: 4rem;
     }
   }
@@ -19,7 +19,7 @@ header{
       position: initial;
     }
     @include responsive(ordinateur){
-      color: white;
+      text-shadow: 4px 3px 4px white;
     }
   }
 }

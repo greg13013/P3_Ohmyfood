@@ -11,7 +11,7 @@
   background: $couleurCoeur;
   -webkit-background-clip: text;
   -webkit-text-fill-color:transparent;
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in;
 }
 
 .far{
@@ -33,6 +33,7 @@
   }
   &:checked + .coeur{
 
+    transition: color 400ms ease-in;
     color: transparent;
     //font-weight: bold;
     //background: $couleurCoeur;
@@ -40,7 +41,7 @@
 
 }
 .coeur {
-  transition: all 400ms ease-in-out;
+  transition: all 400ms ease-in;
   z-index: 10;
   cursor: pointer;
 }

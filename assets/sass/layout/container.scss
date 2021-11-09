@@ -208,6 +208,8 @@ h2{
   padding: 0.5rem;
   color: #098c6c;
   font-weight: bold;
+  border-radius: 5px;
+  @include boxShadow();
 }
 
 .groupCard{
